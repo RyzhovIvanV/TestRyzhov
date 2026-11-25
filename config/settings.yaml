@@ -1,0 +1,19 @@
+base_url: https://www.mebel-1000.ru
+browser: chromium
+headless: true
+slow_mo_ms: 0
+timeouts:
+  default_ms: 15000
+  navigation_ms: 30000
+  expect_ms: 10000
+  optional_ms: 3000
+viewport:
+  width: 1440
+  height: 900
+locale: ru-RU
+data_dir: data
+log:
+  level: INFO
+  dir: logs
+email_login_enabled: true
+allow_order_submit: false

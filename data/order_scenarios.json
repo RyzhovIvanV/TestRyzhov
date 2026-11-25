@@ -1,0 +1,21 @@
+[
+  {
+    "id": "E2E-01",
+    "title": "Вход → поиск → карточка → корзина → оформление заказа (без отправки)",
+    "product": {
+      "search_query": "Лайт 800",
+      "title": "Кровать \"Лайт 800/2 ящика\"",
+      "price": 11600,
+      "color": "Белый/Золотой крафт",
+      "quantity": 1,
+      "url_part": "/catalogue/korpusnaya-mebel/krovati/krovat-layt-800-2-yashchika/"
+    },
+    "customer": {
+      "full_name": "Тестов Тест Тестович",
+      "email": "autotest.order@example.com",
+      "phone": "+7 (900) 000-00-00",
+      "address": "г. Москва, ул. Тестовая, д. 1, кв. 1",
+      "payment": "Наличными"
+    }
+  }
+]

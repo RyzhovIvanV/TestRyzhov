@@ -1,0 +1,20 @@
+[
+  {"id": "AUTH-P-01", "group": "positive", "title": "Вход по логину и паролю", "kind": "login",
+   "identifier": "{LOGIN}", "password": "{PASSWORD}", "expected": "success"},
+  {"id": "AUTH-P-02", "group": "positive", "title": "Вход по e-mail и паролю", "kind": "email",
+   "identifier": "{EMAIL}", "password": "{PASSWORD}", "expected": "success"},
+  {"id": "AUTH-N-01", "group": "empty_identifier", "title": "Пустой идентификатор", "kind": "login",
+   "identifier": "", "password": "{PASSWORD}", "expected": "error", "error": "Неверный логин или пароль."},
+  {"id": "AUTH-N-02", "group": "empty_password", "title": "Пустой пароль", "kind": "login",
+   "identifier": "{LOGIN}", "password": "", "expected": "error", "error": "Неверный логин или пароль."},
+  {"id": "AUTH-N-03", "group": "invalid_format", "title": "E-mail в неверном формате", "kind": "email",
+   "identifier": "autotest@@mail", "password": "{PASSWORD}", "expected": "error", "error": "Неверный логин или пароль."},
+  {"id": "AUTH-N-04", "group": "unknown_account", "title": "Несуществующий логин", "kind": "login",
+   "identifier": "autotest_no_such_user_7319", "password": "{PASSWORD}", "expected": "error", "error": "Неверный логин или пароль."},
+  {"id": "AUTH-N-05", "group": "unknown_account", "title": "Несуществующий e-mail", "kind": "email",
+   "identifier": "autotest_no_such_user_7319@example.com", "password": "{PASSWORD}", "expected": "error", "error": "Неверный логин или пароль."},
+  {"id": "AUTH-N-06", "group": "wrong_password", "title": "Неверный пароль при входе по логину", "kind": "login",
+   "identifier": "{LOGIN}", "password": "Wrong_Pass_000", "expected": "error", "error": "Неверный логин или пароль."},
+  {"id": "AUTH-N-07", "group": "wrong_password", "title": "Неверный пароль при входе по e-mail", "kind": "email",
+   "identifier": "{EMAIL}", "password": "Wrong_Pass_000", "expected": "error", "error": "Неверный логин или пароль."}
+]
